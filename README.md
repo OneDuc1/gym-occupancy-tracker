@@ -26,4 +26,4 @@ Basic gym occupancy tracker and plotter for University of St Andrews sport centr
 
 ## Online
 
-An online version should be available at gokberkkocak.com/gym.s
+An online version should be available [here](http://gokberkkocak.com/gym).
