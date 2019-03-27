@@ -3,7 +3,6 @@
 import requests
 import os
 import datetime
-import time
 import json
 import plotly
 import plotly.graph_objs as go 
@@ -19,7 +18,10 @@ def main():
         hour = int(str(datetime.datetime.now()).split(" ")[1][:6].replace(":",""))
         if hour < 2230 and hour > 630: 
             night = False
-        read_web_and_add(night)
+        try:    
+            read_web_and_add(night)
+        except:
+            print("reading from web failed. website might be down")
         if(count%12==0):
             update_plot(night)
             count=0
