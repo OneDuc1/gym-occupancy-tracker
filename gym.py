@@ -3,6 +3,7 @@
 import requests
 import os
 import datetime
+import time
 import json
 import plotly
 import plotly.graph_objs as go 
