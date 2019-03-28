@@ -17,7 +17,6 @@ def main():
     count=0
     while True:
         hour = int(str(datetime.datetime.now()).split(" ")[1][:6].replace(":",""))
-        print(hour)
         if hour < 2230 and hour > 630: 
             night = False
         else:
